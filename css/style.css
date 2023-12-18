@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: whitesmoke;
+}
+
+@media only screen and (max-width: 430px) {
+
+  .video {
+    width: 100%;
+    height: calc((9 / 16) * 100vw);
+    object-fit: cover;
+    flex-direction: column;
+  }
+
+  main {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .char-png {
+    width: 250px;
+  }
+
+  h2, p {
+    font-size: 16px;
+  }
+
+  .copy-text{
+    font-size: 16px;
+  }
+
+  .logo img {
+    display: none;
+  }
+
+  .logo-char img {
+    display: none;
+  }
+
+  .social-icons{
+    font-size: 24px;
+  }
+
+  .social-icons a:hover {
+    color: none;
+  }
+
+}
+
+menu{
+  display: block;
+}
+
+menu ul{
+  list-style-type: none;
+}
+
+menu ul li a{
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  font-family: "myfirstfont";
+  font-size: 20px;
+  color: black;
+}
+
+span#burguer{
+  background-color: #f7e6d2;
+  color: #ff8000;
+  display: block;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.shaman-banner {
+  width: 100%;
+  height: auto;
+  border-top: 4px solid #ff8000;
+  background-size: cover;
+  background-position: justify;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  position: fixed;
+  padding: 10px;
+}
+
+.logo-char {
+  position: fixed;
+  padding: 10px;
+}
+
+.logo-char img:hover {
+  animation: pulse 2s infinite;
+  filter: opacity(0.8);
+}
+
+.logo img {
+  width: 150px;
+}
+
+.logo-char img {
+  width: 150px;
+}
+
+main {
+  max-width: 1280px;
+  min-height: 100vh;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7e6d2;
+  border-radius: 20px;
+  border: 4px solid #ff8000;
+}
+
+.char-thumb {
+  max-width: 300px;
+  padding: 8px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.char-png {
+  max-width: 480px;
+  margin-right: 24px;
+}
+
+.char-btn {
+  display: block;
+  margin: auto;
+  background-color: #ff8000;
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.form {
+  text-align: center;
+  padding: 10px;
+}
+
+.form input {
+  width: 200px;
+  padding: 15px 25px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin: 0 auto 20px;
+  font-size: 18px;
+}
+
+#signupForm {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+.form-btn {
+  display: block;
+  margin: auto;
+  background-color: #ff8000;
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#confirmationMessage p {
+  text-align: center;
+}
+
+h2 {
+  font-family: sans-serif;
+  font-size: 28px;
+  color: #ff8000;
+  text-align: center;
+  padding: 10px;
+}
+
+@font-face {
+  font-family: myfirstfont;
+  src: url(../fonts/Montserrat-Light.ttf);
+}
+
+p {
+  font-family: "myfirstfont";
+  font-size: 20px;
+  color: black;
+  line-height: 1.5;
+  text-align: left;
+  padding: 10px;
+}
+
+.video {
+  display: block;
+  margin: auto;
+  padding: 8px;
+}
+
+footer {
+  padding: 16px;
+  color: white;
+  background-color: #ff8000;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@font-face {
+  font-family: mysecfont;
+  src: url(../fonts/BarlowCondensed-Bold.ttf);
+}
+
+.copy-text {
+  font-family: "mysecfont";
+  font-size: 20px;
+  color: white;
+  display: flex;
+}
+
+.navbar-container {
+  max-width: 1280px;
+  padding: 8px;
+  display: block;
+  box-sizing: border-box;
+}
+
+.navbar-container a:hover {
+  color: black;
+}
+
+.social-icons a {
+  display: inline;
+  color: white;
+  margin: 0 10px;
+  font-size: 36px;
+  transition: 1s;
+}
+
+.social-icons a:hover {
+  color: black;
+}

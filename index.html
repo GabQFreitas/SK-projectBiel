@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Shaman King</title>
+  </head>
+
+  <body>
+    <header>
+      <span id="burguer" class="material-icons md-24" onclick="clickMenu()"
+        >menu</span
+      >
+      <menu id="itens">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="personagens.html">CHARACTERS</a></li>
+        </ul>
+      </menu>
+    </header>
+
+    <div class="logo">
+      <img src="./img/Shaman_King_2021_logo.jpg" alt="/" />
+    </div>
+
+    <div class="shaman-banner">
+      <img src="./img/shaman king banner.jpg" />
+    </div>
+
+    <main>
+      <section>
+        <h2>Shaman King: veja enredo e trailer do anime</h2>
+
+        <p>
+          Os xamãs são indivíduos extraordinários com a capacidade de se
+          comunicar com fantasmas, espíritos e deuses, que são invisíveis para
+          as pessoas comuns. O Shaman Fight - um torneio de prestígio que coloca
+          xamãs de todo o mundo uns contra os outros - é realizado a cada
+          quinhentos anos, onde o vencedor é coroado Rei Shaman. Este título
+          permite ao atual ocupante invocar o Grande Espírito e moldar o mundo
+          como achar melhor.
+        </p>
+
+        <iframe
+          class="video"
+          width="1200"
+          height="630"
+          src="https://www.youtube.com/embed/Pnx17Btr8KY"
+          frameborder="0"
+          allowfullscreen
+        >
+        </iframe>
+
+        <h2 class="animate__animated animate__pulse animate__infinite infinite">
+          Cadastre-se no fandom de Shaman King
+        </h2>
+
+        <form class="form" id="signupForm">
+          <input type="text" id="name" placeholder="Seu nome" required />
+
+          <input type="email" id="email" placeholder="Seu e-mail" required />
+
+          <button type="button" onclick="submitForm()" class="form-btn">
+            Enviar
+          </button>
+        </form>
+
+        <div id="confirmationMessage" style="display: none">
+          <p>Obrigado por se cadastrar!</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p class="copy-text">&copy; SK-projectBiel | 2023</p>
+
+      <div class="social-icons">
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </footer>
+
+    <script>
+      function clickMenu() {
+        if (itens.style.display == "block") {
+          itens.style.display = "none";
+        } else {
+          itens.style.display = "block";
+        }
+      }
+    </script>
+
+    <script
+      src="https://kit.fontawesome.com/e483feee38.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
