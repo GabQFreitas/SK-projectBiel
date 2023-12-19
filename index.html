@@ -16,17 +16,14 @@
   </head>
 
   <body>
-    <header>
-      <span id="burguer" class="material-icons md-24" onclick="clickMenu()"
-        >menu</span
-      >
-      <menu id="itens">
-        <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="personagens.html">CHARACTERS</a></li>
-        </ul>
-      </menu>
-    </header>
+    <span id="menu-btn">&#9776;</span>
+
+    <div id="menu">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="personagens.html">CHARACTERS</a></li>
+      </ul>
+    </div>
 
     <div class="logo">
       <img src="./img/Shaman_King_2021_logo.jpg" alt="/" />
@@ -90,13 +87,16 @@
     </footer>
 
     <script>
-      function clickMenu() {
-        if (itens.style.display == "block") {
-          itens.style.display = "none";
+      var menuBtn = document.getElementById("menu-btn");
+      var menu = document.getElementById("menu");
+
+      menuBtn.addEventListener("click", function () {
+        if (menu.style.display === "block") {
+          menu.style.display = "none";
         } else {
-          itens.style.display = "block";
+          menu.style.display = "block";
         }
-      }
+      });
     </script>
 
     <script
