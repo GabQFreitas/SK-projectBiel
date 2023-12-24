@@ -53,6 +53,10 @@ html {
   .social-icons a:hover {
     color: none;
   }
+
+  nav{
+    display: none;
+  }
 }
 
 #menu-btn {
@@ -239,14 +243,27 @@ footer {
   display: flex;
 }
 
-.navbar-container {
-  max-width: 1280px;
-  padding: 8px;
-  display: block;
-  box-sizing: border-box;
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.navbar-container a:hover {
+nav ul li {
+  display: block;
+  padding: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: "myfirstfont";
+  font-size: 20px;
+  font-weight: bold;
+  transition: 1s;
+}
+
+nav ul li a:hover {
   color: black;
 }
 
